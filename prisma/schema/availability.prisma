@@ -1,0 +1,17 @@
+model Availability {
+  id            String               @id @default(uuid())
+
+  technicianId  String
+  technician    TechnicianProfile    @relation(fields: [technicianId], references: [id], onDelete: Cascade)
+
+  startTime     DateTime
+  endTime       DateTime
+
+  status        AvailabilityStatus   @default(AVAILABLE)
+
+  createdAt     DateTime             @default(now())
+  updatedAt     DateTime             @updatedAt
+
+  @@index([technicianId])
+  @@index([startTime, endTime])
+}

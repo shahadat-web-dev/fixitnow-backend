@@ -1,0 +1,23 @@
+model User {
+  id           String      @id @default(uuid())
+  name         String
+  email        String      @unique
+  password     String
+
+  role         Role        @default(CUSTOMER)
+  status       UserStatus  @default(ACTIVE)
+
+  phone        String?
+  image        String?
+
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+
+  technicianProfile TechnicianProfile?
+
+  customerBookings Booking[] @relation("CustomerBookings")
+
+  reviews Review[] @relation("CustomerReviews")
+
+  payments Payment[] @relation("CustomerPayments")
+}
