@@ -170,52 +170,6 @@
       ]
     },
     {
-      "name": "Technicians",
-      "item": [
-        {
-          "name": "Get All Technicians",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "http://localhost:5000/api/technicians",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "5000",
-              "path": [
-                "api",
-                "technicians"
-              ]
-            }
-          },
-          "response": []
-        },
-        {
-          "name": "GET Single Technician",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "http://localhost:5000/api/technicians/b6272b46-b9d4-4f57-99d5-2ca3f8ee9cf3",
-              "protocol": "http",
-              "host": [
-                "localhost"
-              ],
-              "port": "5000",
-              "path": [
-                "api",
-                "technicians",
-                "b6272b46-b9d4-4f57-99d5-2ca3f8ee9cf3"
-              ]
-            }
-          },
-          "response": []
-        }
-      ]
-    },
-    {
       "name": "Service",
       "item": [
         {
@@ -509,6 +463,47 @@
                 "technician",
                 "bookings",
                 "b6272b46-b9d4-4f57-99d5-2ca3f8ee9cf3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET Single Technician",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/technicians/b6272b46-b9d4-4f57-99d5-2ca3f8ee9cf3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "technicians",
+                "b6272b46-b9d4-4f57-99d5-2ca3f8ee9cf3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get All Technicians",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:5000/api/technicians",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "technicians"
               ]
             }
           },
