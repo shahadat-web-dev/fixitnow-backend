@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import httpStatus from "http-status";
-import { adminService } from "./admin.service";
-import { UserStatus } from "../../../generated/prisma/enums";
+import { adminService } from "./admin.service.js";
+import { UserStatus } from "../../../generated/prisma/enums.js";
 
 const getAllUsers = async (
   req: Request,

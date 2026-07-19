@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import httpStatus from "http-status";
-import { bookingService } from "./booking.service";
+import { bookingService } from "./booking.service.js";
 
 const createBooking = async (req: Request, res: Response) => {
 

@@ -1,4 +1,4 @@
-import { prisma } from "../../lib/prisma";
+import { prisma } from "../../lib/prisma.js";
 
 const createBooking = async (userId: string, payload: any) => {
   const service = await prisma.service.findUniqueOrThrow({

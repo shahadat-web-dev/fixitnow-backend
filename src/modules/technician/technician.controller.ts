@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import httpStatus from "http-status";
-import { technicianService } from "./technician.service";
+import { technicianService } from "./technician.service.js";
 
 
 const getAllTechnicians = async (req: Request, res: Response) => {

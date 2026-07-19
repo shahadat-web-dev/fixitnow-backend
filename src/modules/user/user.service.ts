@@ -1,7 +1,7 @@
-import { prisma } from "../../lib/prisma";
+import { prisma } from "../../lib/prisma.js";
 import bcrypt from "bcryptjs";
-import config from "../../config";
-import { RegisterUserPayload } from "./user.interface";
+import config from "../../config/index.js";
+import { RegisterUserPayload } from "./user.interface.js";
 
 
 const registerUserIntoDB = async (payload: RegisterUserPayload) => {

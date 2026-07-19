@@ -1,7 +1,7 @@
-import stripe from "../../lib/stripe";
-import { prisma } from "../../lib/prisma";
-import { PaymentStatus, BookingStatus } from "../../../generated/prisma/enums";
-import config from "../../config";
+import stripe from "../../lib/stripe.js";
+import { prisma } from "../../lib/prisma.js";
+import { PaymentStatus, BookingStatus } from "../../../generated/prisma/enums.js";
+import config from "../../config/index.js";
 
 
 

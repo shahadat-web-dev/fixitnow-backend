@@ -1,4 +1,4 @@
-import { PaymentProvider } from "../../../generated/prisma/enums";
+import { PaymentProvider } from "../../../generated/prisma/enums.js";
 
 export interface CreatePaymentPayload {
   bookingId: string;
