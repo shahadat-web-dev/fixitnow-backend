@@ -1,7 +1,6 @@
 import stripe from "../../lib/stripe";
 import { prisma } from "../../lib/prisma";
 import { PaymentStatus, BookingStatus } from "../../../generated/prisma/enums";
-import Stripe from "stripe";
 import config from "../../config";
 
 
